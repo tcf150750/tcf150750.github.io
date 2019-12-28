@@ -346,7 +346,7 @@ h2 {
 	position: fixed;
 	width: 30%;
 	height: 100%;
-	background: url(../images/bck7.png) no-repeat;
+	background: url(/public/images/bck7.png) no-repeat;
 	background-size: 100% 100%;
 	
 }
@@ -356,7 +356,7 @@ h2 {
 	display: none;
 	width: 30%;
 	height: 100%;
-	background: url(../images/back8.png) no-repeat;
+	background: url(/public/images/back8.png) no-repeat;
 	background-size: 100% 100%;
 }
 #bg_img3{
@@ -365,7 +365,7 @@ h2 {
 	display: none;
 	width: 30%;
 	height: 100%;
-	background: url(../images/back5.png) no-repeat;
+	background: url(/public/images/back5.png) no-repeat;
 	background-size: 100% 100%;
 }
 
