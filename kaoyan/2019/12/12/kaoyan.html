@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>elatutu's blog</title>
+
+<script type="text/javascript" src="/public/lib/jQuery/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="/public/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/public/lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/public/css/index.css">
+<link rel="stylesheet" media="screen and (min-width:1100px)" href="/public/css/pc.css">
+<link rel="stylesheet" media="screen and (min-width:640px)" href="/public/css/ipad.css">
+<link rel="stylesheet" media="screen and (max-width:639px)" href="/public/css/iphone.css">
+<style type="text/css">
+	#wenzi {
+		margin-top: 30px;
+		font-size: 20px;
+		text-indent: 2em;
+	}
+	.right-box{
+		margin-top: 50px;
+		margin-bottom: 50px;
+		/*padding: 30px;*/
+		/*background: url('images/images (1).jfif') no-repeat;*/
+		background-size: 100% 100%;
+
+	}
+	.right-div1 {
+		/*background: #FAF2E1;*/
+	}
+	.right-div2 {
+		/*padding: 30px;*/
+
+	}
+		
+	.right-content {
+		font-size: 20px;
+		margin-top: 30px;
+	
+	}
+	.page-right{
+		height: 100%;
+		background: url('/public/images/beijing.jpg') no-repeat;
+		background-size: 100% 100%;	
+	}
+	.bb {
+		border: 1px solid #D3D3D3;
+		background-color: #FAFBFF;
+		width: 90%;
+		height: 80%;
+		margin: 0 auto;
+	}
+</style>
+</head>
+<body>
+	<div id="bg_img1"></div>
+	<div id="bg_img2"></div>
+	<div id="bg_img3"></div>
+	<div id="wrap">
+		<!-- 左 -->
+
+		<div class="left" id="box">
+
+				<div class="box">
+					<div class="row box1" >
+						<!-- 头像描述 -->
+						<div class="col-md-12 div1">
+							<div class="col-md-4"></div>
+							<div class="col-md-4">
+								<div class="tu"  >
+								<img id="img1" src="/public/images/touxiang.jpg" style="width: 100px;height: 100px;border: 1px solid pink; border-radius: 50%">
+								</div>
+								<h1>涂涂的博客</h1>
+								<h1>elatutu blog</h1>	
+							</div>	
+							<div class="col-md-4"></div>			
+						</div>
+						<!-- 头像描述结束 -->
+						<!-- 导航栏开始 -->
+						<div class="col-md-12 div2">
+							<div class="col-md-3"></div>
+							<!-- 主页标签 -->
+							<div class="col-md-2 div2_1">
+								<a class="aa" href="index.html" ><span class="glyphicon glyphicon-align-justify"></span><p>首页</p></a>
+							</div>
+							<!-- 主页标签结束 -->
+							<!--  分类标签-->
+							<div class="col-md-2 div2_1">
+								<a class="aa" href="/fenlei.html"><span class="glyphicon glyphicon-book"></span><p>分类</p></a>
+								
+
+							</div>
+							<!-- 分类标签结束 -->
+							<!--  -->
+							<div class="col-md-2 div2_1">
+								<a class="aa" href="#"><span id="sp1" class="glyphicon glyphicon-heart" onclick="get()"></span><p>点赞</p></a>
+							</div>
+		
+							<div class="col-md-3"></div>	
+						</div>
+						<!-- 导航栏结束 -->
+						<!-- 介绍语 -->
+						<div class="col-md-12 div3">
+							<p class="p">欢迎大家我是粉红豹女孩，对，就是超级喜欢粉红豹。学自己所爱，和喜欢的人玩。记录前端学习的成长和点滴。</p>
+						</div>
+						<!-- 介绍语结束 -->
+						
+					</div>
+
+					<!-- 评论 -->
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>HTML</h4>
+							<p class="p">还不错，喜欢,有些许灵感了</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>css</h4>
+							<p class="p">还不错,喜欢</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>牛仔裤番茄</h4>
+							<p class="p">让我来瞅一瞅</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>chaochao</h4>
+							<p class="p">反正我不管，爱了爱了</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>js5</h4>
+							<p class="p">技能树还挺相似的 年纪也差不多 为我翻版个人博客提供了许多灵感 感谢</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+
+					<!-- 查看留言开始-->
+					<div class="row box3">
+						<div class="col-md-12">
+								<!-- <a id="a1" href=""><span class="glyphicon glyphicon-menu-hamburger span1" style=""></span><p id="p1">查看更多</p></a> -->
+								<a id="a1" href="/public/talk.html"><span class="glyphicon glyphicon-pencil span1" style=""></span><p id="p1">写新留言</p></a>
+						</div>
+						<!-- <div class="col-md-6"></div> -->
+					</div>
+					<!-- 查看留言结束 -->
+					<div class="row box7">
+						<div class="col-md-1"></div>
+						<div class="col-md-11">
+							<p>本宝宝已运行：</p><span id="htmer_time"></span>
+							<!-- <label>本宝宝已运行:</label><label id="year">0</label><label>年</label><label id="month">0</label><label>月</label><label id="day">0</label><label>日</label> -->
+						</div>
+						<!-- <div class="col-md-1"></div> -->
+					</div>
+				</div>	<!-- 评论语结束 -->
+			
+		</div>
+		
+		<!-- 右 -->
+		<div class="right page-right">
+			
+			<div class="row ">
+				<div class="col-md-1 right-div1"></div>
+				<div class="col-md-10 right-content">
+					<h2>考研如何确定学校</h2>
+					<p style="font-size: 15px;margin-top: 20px;">时间：2019/12/12 发布</p>
+					<p id="wenzi"> <p>我们常常听到一句话“选择比努力更重要”，这句话放在考研这件事上也是完全适用的。信息的不平等，导致了很多的人不能够对目标院校有一个清楚的了解。链接：https://www.zhihu.com/question/265595875/answer/914147356
+<!--more-->
+每年考研结果一出，几家欢喜几家愁，有的同学可能自己本身考的分数不错，但由于竞争过大导致落榜；可能有的同学考的并不是很好，但是报考学校招生人数多，竞争压力小却能考入一所不错的大学。所以说选择很重要，一旦方向错了，将会在错误的道路上越走越远！</p>
+<p>很多人都认可考研复习备考的过程是最难的，但其实选择学校和专业也必须花一番心思才是，考研的难从做选择时就开始了。关于确定学校，你必须了解这些：下面棍哥将针对表格内容做一些详细说明。在此之前，我还想先讨论一下专业和院校之间的关系，院校和专业哪个更重要，其实都重要。院校选择在某种程度上是决定了你是否能考上研究生，而专业决定了你未来的就业方向以及就业薪资。第一，从学历与就业关系的角度看。如果，你只想拿到研究生学历，不在乎学的是不是冷门专业，选择一所相对好考一点的学校，再选择它历年都招不满的专业，考上的几率还是挺大的，当然前提还是你要认真去复习；如果你想选择一个就业前景好，势必又热门的专业，那么院校选择是非常关键，想想双一流热门专业难不难？还用说吗，难于上青天啊。如果自己的基础并没有特厉害，选择一个“性价比高”的院校是重中之重，不要盲目追求名校。第二，从不同类专业的角度看。/比如一些人文方面的学科：汉语言文学，教育学类，心理学等，尽量选择社会名气和认可度比较高的师范院校和名校。之前听一个学历史的老师讲过，他以前去应聘的时候，别人问他是那个专业的，他说学历史的，人家就投来了一丝不屑的眼光：学这个专业有啥用？但是当他说我是北大的，人家态度立马变了。/一些理工科，实践性更强的专业：电气工程，自动化之类的只关注专业认可度，院校次之。/还有财经类、法律类这种专业性很强的专业，业界有自己的大学排名，不一定是特别有名，但是专业性很强的院校如南京审计大学、湖北经济学院的认可度是很高的，所以这类专业的业务精湛更重要。</p>
+<p>OK，现在回归正题，来说明表格中大家需要关注的内容。1. 招生人数（统考）：研究生当中有保送上去的，也就是推免生，还有一部分是参加统考招生上去的，我们这些考研的就是指的参加统考的学生。现在的大趋势是保送生越来越多，尤其是一些好学校，更偏爱保送，夏令营。所以这里也要提一句，想考研的朋友们早考早好，统考招生的比例很可能会越来越低，当然这不是今天的重点。关注该校该专业的统考人数，关系到你有多少机会考上，竞争有多激烈。比方说有的专业每年只招一个人（当然这很极端了），你有多大把握这个人是你呢？水平相当的同一专业，不同院校之间肯定要选择招生人数更多的。就算是两者相比，院校可能稍次，但招的人多，也还是要选它。2. 分数线	主要指复试线，历年平均分你应该达到的目标。研究生考试的复试线有三种，一是国家线，二是院校线，三是34所高校是自主划线。先说国家线，国家线是进入复试后最最最低的要求，每年三月在研招网公布，国家线都过不了基本不可能进入复试了，也没有调剂的可能。院校线是指现在大多数学校为了控制复试人数，在国家线的基础上自主划线，在自己的院校官网上发布，达到分数线的进入复试。34所高校是自主划线其实相当于他们自己定的国家线，实际上学校的各个学院还会划分一次自己的专业线，这些都可以在院校官网上查到。查不到的可以直接参考以往的复试名单。看往年年被录取考生们的初试成绩，加起来去平均值，即为目标分数。3.报录比报录比很多学校并不会直接公布，或者根本没想过公布，以免学生觉得竞争激烈而不参与报考。所以只能在“民间渠道”自己查，像是我在表格中举的例子：考研帮/公粽号：大数据考研/中国考研网等。报录比是指“报考人数：录取人数”的比例，比例越大，竞争越激烈，自身基础情况不是很高的同学不要报竞争太激烈的学校专业，以免成为炮灰。4. 考试科目	研招网和院校官网发布的招生专业目录上都有考试科目，这会让你知道考几科，分值是多少，大致考什么内容。尤其是对于跨专业的同学来说，了解目标专业考些什么，是你接触跨考的第一步，可以看看是不是你能驾驭的领域。5.专业课参考书目	我之前有个同学选学校，就是回去看，他们的专业课书籍用的什么版本，是否跟自己本科院校的一致。如果是一样的版本，其实是一件好事，第一你学过要求的专业书，再复习起来不那么费力。第二说明两个学校的老师眼光相近，观点也会比较相近，你上研后学习也会连贯一些。6.所在城市学校所处区域关系着大家研究生就读期间接触的平台、资源还有将来的就业发展，去自己打算就业的地区去读研是最好的选择，三年时间可以接触更多好的资源和人脉，为自己踏上社会搭建关系网，为自己的工作、事业做准备打基础。7.导师情况	选择院校时，师资配置的水平一定是一个不可忽略的方面。考研的人逐年攀升，虽说上研的人只是一小部分，但是相比以往，学校的研究生院压力增大不少，而授课老师人数有限，质量水平不一。大家也都知道，一个好的导师对你的研究生生涯，甚至是整个人生都有重要的影响，多多了解还是有必要的。可能初试了解的条件有限，导师的选择只是很其次的，有条件的可以了解一下，万一某位导师是你失散多年的舅舅，那你的上研希望不就大了几分。（疯狂暗示：人情社会，人脉还是很有用的。）8.有无特殊要求	院校官网的招生简章和目录要仔细看，上面对于招生的要求有详细的说明。有的学校，有的专业可能对英语四六级有要求，有的可能很看重本科阶段的表现：成绩、竞赛、论文发表等等。还有的学校对跨专业的同学有特殊要求，还有的不接受跨考。这些都要注意，免得自己一腔热血想报，但却没有资格，竹篮打水一场空哦。最后，跨专业的同学怎么选择学校，怎么备考，棍儿哥有一篇文章专门做了说明，大家可以参考：跨专业考研怎么准备？​www.zhihu.com看了这么多，你是不是觉得更迷茫了，但是你确实不能随便就报个学校啊，耐着性子多多查资料比较吧，世界上最高效的事情不就是在正确的事情上努力努力再努力嘛！</p>
+<p>作者：考研老冰棍</p>
+
+<p>来源：知乎</p>
+ </p>
+					<div class="row right-div2">
+						<div class="col-md-12 right-box" style='border: 1px solid #D3D3D3; height: 200px;font-size: 20px'>
+							你也来说两句呗
+							<div class="bb" >
+								
+							</div>
+						</div>
+						<!-- <div class="col-md-12" style="border: 1px solid #3D3D3D">
+							昵称: 
+						</div>  -->
+					</div>
+				</div>
+				<div class="col-md-1 right-div1"></div>
+			</div> 
+	
+		</div>
+
+	</div>
+
+ <script type="text/javascript">
+			var left = document.getElementsByClassName('left');
+			var timer;
+
+			left[0].onmousemove = function (e) {
+			var y = e.clientY;
+			console.dir(y);	
+			var h = document.documentElement.clientHeight;
+			var hi = h/2;
+			var _t = this;
+			clearInterval(timer);
+			if(y < hi) {
+				//向上走
+				
+				timer = setInterval(function(){
+					_t.scrollTop -= 1;
+				},20);
+			} else {
+			//向下走
+				timer = setInterval(function(){
+					_t.scrollTop += 1;
+				},20);
+			 }
+			console.dir(hi);
+			console.dir(h);
+			}	
+			
+
+			left[0].onmouseleave = function (e) {
+				clearInterval(timer)
+			}
+
+
+	</script>
+	<script type="text/javascript" src="/public/js/index.js"></script>
+</body>
+</html> 

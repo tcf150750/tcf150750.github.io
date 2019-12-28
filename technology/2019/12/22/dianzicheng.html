@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>elatutu's blog</title>
+
+<script type="text/javascript" src="/public/lib/jQuery/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="/public/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/public/lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/public/css/index.css">
+<link rel="stylesheet" media="screen and (min-width:1100px)" href="/public/css/pc.css">
+<link rel="stylesheet" media="screen and (min-width:640px)" href="/public/css/ipad.css">
+<link rel="stylesheet" media="screen and (max-width:639px)" href="/public/css/iphone.css">
+<style type="text/css">
+	#wenzi {
+		margin-top: 30px;
+		font-size: 20px;
+		text-indent: 2em;
+	}
+	.right-box{
+		margin-top: 50px;
+		margin-bottom: 50px;
+		/*padding: 30px;*/
+		/*background: url('images/images (1).jfif') no-repeat;*/
+		background-size: 100% 100%;
+
+	}
+	.right-div1 {
+		/*background: #FAF2E1;*/
+	}
+	.right-div2 {
+		/*padding: 30px;*/
+
+	}
+		
+	.right-content {
+		font-size: 20px;
+		margin-top: 30px;
+	
+	}
+	.page-right{
+		height: 100%;
+		background: url('/public/images/beijing.jpg') no-repeat;
+		background-size: 100% 100%;	
+	}
+	.bb {
+		border: 1px solid #D3D3D3;
+		background-color: #FAFBFF;
+		width: 90%;
+		height: 80%;
+		margin: 0 auto;
+	}
+</style>
+</head>
+<body>
+	<div id="bg_img1"></div>
+	<div id="bg_img2"></div>
+	<div id="bg_img3"></div>
+	<div id="wrap">
+		<!-- 左 -->
+
+		<div class="left" id="box">
+
+				<div class="box">
+					<div class="row box1" >
+						<!-- 头像描述 -->
+						<div class="col-md-12 div1">
+							<div class="col-md-4"></div>
+							<div class="col-md-4">
+								<div class="tu"  >
+								<img id="img1" src="/public/images/touxiang.jpg" style="width: 100px;height: 100px;border: 1px solid pink; border-radius: 50%">
+								</div>
+								<h1>涂涂的博客</h1>
+								<h1>elatutu blog</h1>	
+							</div>	
+							<div class="col-md-4"></div>			
+						</div>
+						<!-- 头像描述结束 -->
+						<!-- 导航栏开始 -->
+						<div class="col-md-12 div2">
+							<div class="col-md-3"></div>
+							<!-- 主页标签 -->
+							<div class="col-md-2 div2_1">
+								<a class="aa" href="index.html" ><span class="glyphicon glyphicon-align-justify"></span><p>首页</p></a>
+							</div>
+							<!-- 主页标签结束 -->
+							<!--  分类标签-->
+							<div class="col-md-2 div2_1">
+								<a class="aa" href="/fenlei.html"><span class="glyphicon glyphicon-book"></span><p>分类</p></a>
+								
+
+							</div>
+							<!-- 分类标签结束 -->
+							<!--  -->
+							<div class="col-md-2 div2_1">
+								<a class="aa" href="#"><span id="sp1" class="glyphicon glyphicon-heart" onclick="get()"></span><p>点赞</p></a>
+							</div>
+		
+							<div class="col-md-3"></div>	
+						</div>
+						<!-- 导航栏结束 -->
+						<!-- 介绍语 -->
+						<div class="col-md-12 div3">
+							<p class="p">欢迎大家我是粉红豹女孩，对，就是超级喜欢粉红豹。学自己所爱，和喜欢的人玩。记录前端学习的成长和点滴。</p>
+						</div>
+						<!-- 介绍语结束 -->
+						
+					</div>
+
+					<!-- 评论 -->
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>HTML</h4>
+							<p class="p">还不错，喜欢,有些许灵感了</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>css</h4>
+							<p class="p">还不错,喜欢</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>牛仔裤番茄</h4>
+							<p class="p">让我来瞅一瞅</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>chaochao</h4>
+							<p class="p">反正我不管，爱了爱了</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>js5</h4>
+							<p class="p">技能树还挺相似的 年纪也差不多 为我翻版个人博客提供了许多灵感 感谢</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+
+					<!-- 查看留言开始-->
+					<div class="row box3">
+						<div class="col-md-12">
+								<!-- <a id="a1" href=""><span class="glyphicon glyphicon-menu-hamburger span1" style=""></span><p id="p1">查看更多</p></a> -->
+								<a id="a1" href="/public/talk.html"><span class="glyphicon glyphicon-pencil span1" style=""></span><p id="p1">写新留言</p></a>
+						</div>
+						<!-- <div class="col-md-6"></div> -->
+					</div>
+					<!-- 查看留言结束 -->
+					<div class="row box7">
+						<div class="col-md-1"></div>
+						<div class="col-md-11">
+							<p>本宝宝已运行：</p><span id="htmer_time"></span>
+							<!-- <label>本宝宝已运行:</label><label id="year">0</label><label>年</label><label id="month">0</label><label>月</label><label id="day">0</label><label>日</label> -->
+						</div>
+						<!-- <div class="col-md-1"></div> -->
+					</div>
+				</div>	<!-- 评论语结束 -->
+			
+		</div>
+		
+		<!-- 右 -->
+		<div class="right page-right">
+			
+			<div class="row ">
+				<div class="col-md-1 right-div1"></div>
+				<div class="col-md-10 right-content">
+					<h2>3D Touch 屏幕电子秤的实现</h2>
+					<p style="font-size: 15px;margin-top: 20px;">时间：2019/12/22 发布</p>
+					<p id="wenzi"> <p>自从 iPhone 6s 发布以来，不少开发者都在研究用 3D Touch 屏幕检测物体重量的可行性。虽然从理论上来说硬件是完全支持的，但是 Apple 却一直不在软件方面提供支持。两个月前国外有人利用私有 API 强行实现了它，可却被 App Store 拒绝上架，大家只能无奈地看看演示视频来感受这个神奇的功能。</p>
+<!--more-->
+<p>iPhone 6s + 铁勺子 = 电子秤？虽然听起来不可思议，可就在今天上午，我无意间发现了用 Javascript 检测 3D Touch 屏幕压力的方法，并且在浏览器里直接实现了电子秤功能！不需要上架审核，也不用下载任何应用，只要有一把普通的金属勺子，在 iPhone 6s 上用自带的 Safari 浏览器打开这个页面（或扫描这个二维码）就能开始玩啦！</p>
+<p>第一步：先将手机放在平坦的表面上，再把金属勺子轻轻地放在屏幕的感应区上；
+第二步：记下勺子的重量，拿开勺子，拉动屏幕上方的“皮重调节”滑块至抵消勺子的自身重量的位置；
+第三步：再把勺子轻轻放回感应区，此时重量应显示为 0，如有误差则重复第二步；
+第四步：拿起勺子，把要称重的物体放在勺子上，再一起轻放在感应区上即可。</p>
+<p>现在电子秤的功能已经实现了，但准确度如何？只有测试一下才知道。于是我在家里翻箱倒柜，先找到这个尘封已久的小电子秤，用我桌子上的几个常见物品来做个对比试验：</p>
+<p>结论：iPhone 6s 的准确度与精确度都非常不错，竟然与专用电子秤一克不差。不过根据勺子的摆放方式，有时会出现 ±2g 左右的浮动，可以把勺子拿起来再重新放下去，多调整几次之后才能得到更准确些的数字，所以并没有多少实用价值。另外，理论重量检测上限为 385g，不要放太重的东西，如果你不听话把屏幕压裂了可别怪我！</p>
+<p>前面提到过用 Javascript 检测屏幕压力，听起来似乎很神奇，实现起来却非常简单。今天在看国外一些著名开发者博客的时候，忽然发现 JS 的触摸事件出现了一个 force 属性，可以按百分比返回 3D Touch 的触摸力度（理论上亦适用于 Force Touch 触控板）。查了资料后得知 iPhone 6s 的 3D Touch 压力上限是 385g，那么只要经过简单的换算就能得出结果。再顺手写个简单的界面，还不到一小时就做好了。现在正考虑要不要再做一个自动去除勺子重量的功能。</p>
+ </p>
+					<div class="row right-div2">
+						<div class="col-md-12 right-box" style='border: 1px solid #D3D3D3; height: 200px;font-size: 20px'>
+							你也来说两句呗
+							<div class="bb" >
+								
+							</div>
+						</div>
+						<!-- <div class="col-md-12" style="border: 1px solid #3D3D3D">
+							昵称: 
+						</div>  -->
+					</div>
+				</div>
+				<div class="col-md-1 right-div1"></div>
+			</div> 
+	
+		</div>
+
+	</div>
+
+ <script type="text/javascript">
+			var left = document.getElementsByClassName('left');
+			var timer;
+
+			left[0].onmousemove = function (e) {
+			var y = e.clientY;
+			console.dir(y);	
+			var h = document.documentElement.clientHeight;
+			var hi = h/2;
+			var _t = this;
+			clearInterval(timer);
+			if(y < hi) {
+				//向上走
+				
+				timer = setInterval(function(){
+					_t.scrollTop -= 1;
+				},20);
+			} else {
+			//向下走
+				timer = setInterval(function(){
+					_t.scrollTop += 1;
+				},20);
+			 }
+			console.dir(hi);
+			console.dir(h);
+			}	
+			
+
+			left[0].onmouseleave = function (e) {
+				clearInterval(timer)
+			}
+
+
+	</script>
+	<script type="text/javascript" src="/public/js/index.js"></script>
+</body>
+</html> 

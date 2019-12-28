@@ -1,0 +1,17 @@
+@media screen and (max-width:1100px){
+	#wrap{
+		width:1100px;
+	}
+	.left{
+		width: 30%;
+		float: left;
+
+	}
+	.right{
+		width: 70%;
+		float: right;
+
+	}
+
+
+}

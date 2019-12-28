@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>elatutu's blog</title>
+
+<script type="text/javascript" src="/public/lib/jQuery/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="/public/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/public/lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/public/css/index.css">
+<link rel="stylesheet" media="screen and (min-width:1100px)" href="/public/css/pc.css">
+<link rel="stylesheet" media="screen and (min-width:640px)" href="/public/css/ipad.css">
+<link rel="stylesheet" media="screen and (max-width:639px)" href="/public/css/iphone.css">
+<style type="text/css">
+	#wenzi {
+		margin-top: 30px;
+		font-size: 20px;
+		text-indent: 2em;
+	}
+	.right-box{
+		margin-top: 50px;
+		margin-bottom: 50px;
+		/*padding: 30px;*/
+		/*background: url('images/images (1).jfif') no-repeat;*/
+		background-size: 100% 100%;
+
+	}
+	.right-div1 {
+		/*background: #FAF2E1;*/
+	}
+	.right-div2 {
+		/*padding: 30px;*/
+
+	}
+		
+	.right-content {
+		font-size: 20px;
+		margin-top: 30px;
+	
+	}
+	.page-right{
+		height: 100%;
+		background: url('/public/images/beijing.jpg') no-repeat;
+		background-size: 100% 100%;	
+	}
+	.bb {
+		border: 1px solid #D3D3D3;
+		background-color: #FAFBFF;
+		width: 90%;
+		height: 80%;
+		margin: 0 auto;
+	}
+</style>
+</head>
+<body>
+	<div id="bg_img1"></div>
+	<div id="bg_img2"></div>
+	<div id="bg_img3"></div>
+	<div id="wrap">
+		<!-- 左 -->
+
+		<div class="left" id="box">
+
+				<div class="box">
+					<div class="row box1" >
+						<!-- 头像描述 -->
+						<div class="col-md-12 div1">
+							<div class="col-md-4"></div>
+							<div class="col-md-4">
+								<div class="tu"  >
+								<img id="img1" src="/public/images/touxiang.jpg" style="width: 100px;height: 100px;border: 1px solid pink; border-radius: 50%">
+								</div>
+								<h1>涂涂的博客</h1>
+								<h1>elatutu blog</h1>	
+							</div>	
+							<div class="col-md-4"></div>			
+						</div>
+						<!-- 头像描述结束 -->
+						<!-- 导航栏开始 -->
+						<div class="col-md-12 div2">
+							<div class="col-md-3"></div>
+							<!-- 主页标签 -->
+							<div class="col-md-2 div2_1">
+								<a class="aa" href="index.html" ><span class="glyphicon glyphicon-align-justify"></span><p>首页</p></a>
+							</div>
+							<!-- 主页标签结束 -->
+							<!--  分类标签-->
+							<div class="col-md-2 div2_1">
+								<a class="aa" href="/fenlei.html"><span class="glyphicon glyphicon-book"></span><p>分类</p></a>
+								
+
+							</div>
+							<!-- 分类标签结束 -->
+							<!--  -->
+							<div class="col-md-2 div2_1">
+								<a class="aa" href="#"><span id="sp1" class="glyphicon glyphicon-heart" onclick="get()"></span><p>点赞</p></a>
+							</div>
+		
+							<div class="col-md-3"></div>	
+						</div>
+						<!-- 导航栏结束 -->
+						<!-- 介绍语 -->
+						<div class="col-md-12 div3">
+							<p class="p">欢迎大家我是粉红豹女孩，对，就是超级喜欢粉红豹。学自己所爱，和喜欢的人玩。记录前端学习的成长和点滴。</p>
+						</div>
+						<!-- 介绍语结束 -->
+						
+					</div>
+
+					<!-- 评论 -->
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>HTML</h4>
+							<p class="p">还不错，喜欢,有些许灵感了</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>css</h4>
+							<p class="p">还不错,喜欢</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>牛仔裤番茄</h4>
+							<p class="p">让我来瞅一瞅</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>chaochao</h4>
+							<p class="p">反正我不管，爱了爱了</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>js5</h4>
+							<p class="p">技能树还挺相似的 年纪也差不多 为我翻版个人博客提供了许多灵感 感谢</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+
+					<!-- 查看留言开始-->
+					<div class="row box3">
+						<div class="col-md-12">
+								<!-- <a id="a1" href=""><span class="glyphicon glyphicon-menu-hamburger span1" style=""></span><p id="p1">查看更多</p></a> -->
+								<a id="a1" href="/public/talk.html"><span class="glyphicon glyphicon-pencil span1" style=""></span><p id="p1">写新留言</p></a>
+						</div>
+						<!-- <div class="col-md-6"></div> -->
+					</div>
+					<!-- 查看留言结束 -->
+					<div class="row box7">
+						<div class="col-md-1"></div>
+						<div class="col-md-11">
+							<p>本宝宝已运行：</p><span id="htmer_time"></span>
+							<!-- <label>本宝宝已运行:</label><label id="year">0</label><label>年</label><label id="month">0</label><label>月</label><label id="day">0</label><label>日</label> -->
+						</div>
+						<!-- <div class="col-md-1"></div> -->
+					</div>
+				</div>	<!-- 评论语结束 -->
+			
+		</div>
+		
+		<!-- 右 -->
+		<div class="right page-right">
+			
+			<div class="row ">
+				<div class="col-md-1 right-div1"></div>
+				<div class="col-md-10 right-content">
+					<h2>Hadoop学习</h2>
+					<p style="font-size: 15px;margin-top: 20px;">时间：2019/11/23 发布</p>
+					<p id="wenzi"> <p>1.	相对定位：相对于原来位置偏移
+2.	绝对定位：position：absolute；相对于原始父级元素位置 
+3.	区别：
+4.	定位作用于上一个模型；
+<!--more-->
+布局：
+父子关系嵌套的标签，子标签有margin,父标签的margin也会跟着动
+解决：方案二：给父标签加  overflow:auto;
+方案三：给父标签前加个伪类；
+
+5.	任何图片都存在下标3像素的的边距
+解决：在img：加display:block;或者是verticla-align:top;
+6.	margin:改变边边界，不改变位置。
+7.	双飞翼布局和圣杯布局通过让三列进行浮动实现
+8.	轮播：
+
+
+12.10
+1.fixed定位：
+
+粘连布局；
+3.特效：
+1.线性渐变：bacground:linear-gredient(top,red,green)从top开始红色到绿色过度
+加浏览器前缀；谷歌：-webkit;火狐：-moz-；
+重复性渐变：重复使用；
+径向渐变：从圆心位置开始渐变；
+2.CSS3过渡
+</p>
+ </p>
+					<div class="row right-div2">
+						<div class="col-md-12 right-box" style='border: 1px solid #D3D3D3; height: 200px;font-size: 20px'>
+							你也来说两句呗
+							<div class="bb" >
+								
+							</div>
+						</div>
+						<!-- <div class="col-md-12" style="border: 1px solid #3D3D3D">
+							昵称: 
+						</div>  -->
+					</div>
+				</div>
+				<div class="col-md-1 right-div1"></div>
+			</div> 
+	
+		</div>
+
+	</div>
+
+ <script type="text/javascript">
+			var left = document.getElementsByClassName('left');
+			var timer;
+
+			left[0].onmousemove = function (e) {
+			var y = e.clientY;
+			console.dir(y);	
+			var h = document.documentElement.clientHeight;
+			var hi = h/2;
+			var _t = this;
+			clearInterval(timer);
+			if(y < hi) {
+				//向上走
+				
+				timer = setInterval(function(){
+					_t.scrollTop -= 1;
+				},20);
+			} else {
+			//向下走
+				timer = setInterval(function(){
+					_t.scrollTop += 1;
+				},20);
+			 }
+			console.dir(hi);
+			console.dir(h);
+			}	
+			
+
+			left[0].onmouseleave = function (e) {
+				clearInterval(timer)
+			}
+
+
+	</script>
+	<script type="text/javascript" src="/public/js/index.js"></script>
+</body>
+</html> 

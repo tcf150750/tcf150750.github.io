@@ -1,0 +1,267 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>elatutu's blog</title>
+</head>
+<script type="text/javascript" src="/public/lib/jQuery/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="/public/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/public/lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/public/css/index.css">
+<link rel="stylesheet" media="screen and (min-width:1100px)" href="/public/css/pc.css">
+<link rel="stylesheet" media="screen and (min-width:640px)" href="/public/css/ipad.css">
+<link rel="stylesheet" media="screen and (max-width:639px)" href="/public/css/iphone.css">
+
+<body>
+		<div id="bg_img1"></div>
+		<div id="bg_img2"></div>
+		<div id="bg_img3"></div>
+	<div id="wrap">
+		<!-- 左 -->
+
+		<div class="left" id="box">
+
+				<div class="box">
+					<div class="row box1" >
+						<!-- 头像描述 -->
+						<div class="col-md-12 div1">
+							<div class="col-md-4"></div>
+							<div class="col-md-4">
+								<div class="tu"  >
+								<img id="img1" src="/public/images/touxiang.jpg" style="width: 100px;height: 100px;border: 1px solid pink; border-radius: 50%">
+								</div>
+								<h1>涂涂的博客</h1>
+								<h1>elatutu blog</h1>	
+							</div>	
+							<div class="col-md-4"></div>			
+						</div>
+						<!-- 头像描述结束 -->
+						<!-- 导航栏开始 -->
+						<div class="col-md-12 div2">
+							<div class="col-md-3"></div>
+							<!-- 主页标签 -->
+							<div class="col-md-2 div2_1">
+								<a class="aa" href="index.html" ><span class="glyphicon glyphicon-align-justify"></span><p>首页</p></a>
+							</div>
+							<!-- 主页标签结束 -->
+							<!--  分类标签-->
+							<div class="col-md-2 div2_1">
+								<a class="aa" href="/fenlei.html"><span class="glyphicon glyphicon-book"></span><p>分类</p></a>
+								
+
+							</div>
+							<!-- 分类标签结束 -->
+							<!--  -->
+							<div class="col-md-2 div2_1">
+								<a class="aa" href="#"><span id="sp1" class="glyphicon glyphicon-heart"onclick="get()"></span><p>点赞</p></a>
+							</div>
+		
+							<div class="col-md-3"></div>	
+						</div>
+						<!-- 导航栏结束 -->
+						<!-- 介绍语 -->
+						<div class="col-md-12 div3">
+							<p class="p">欢迎大家我是粉红豹女孩，对，就是超级喜欢粉红豹。学自己所爱，和喜欢的人玩。记录前端学习的成长和点滴。</p>
+						</div>
+						<!-- 介绍语结束 -->
+						
+					</div>
+
+					<!-- 评论 -->
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>HTML</h4>
+							<p class="p">还不错，喜欢,有些许灵感了</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>css</h4>
+							<p class="p">还不错,喜欢</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>牛仔裤番茄</h4>
+							<p class="p">让我来瞅一瞅</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>chaochao</h4>
+							<p class="p">反正我不管，爱了爱了</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>js5</h4>
+							<p class="p">技能树还挺相似的 年纪也差不多 为我翻版个人博客提供了许多灵感 感谢</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+
+					<!-- 查看留言开始-->
+					<div class="row box3">
+						<div class="col-md-12">
+								<!-- <a id="a1" href=""><span class="glyphicon glyphicon-menu-hamburger span1" style=""></span><p id="p1">查看更多</p></a> -->
+								<a id="a1" href="/public/talk.html"><span class="glyphicon glyphicon-pencil span1" style=""></span><p id="p1">写新留言</p></a>
+						</div>
+						<!-- <div class="col-md-6"></div> -->
+					</div>
+					<!-- 查看留言结束 -->
+					<div class="row box7">
+						<div class="col-md-1"></div>
+						<div class="col-md-11">
+							<p>本宝宝已运行：</p><span id="htmer_time"></span>
+							
+						</div>
+					</div>
+				</div>	<!-- 评论语结束 -->
+			
+		</div>
+		
+		<!-- 右 -->
+		<div class="right">
+				
+<div class="row div_2">
+				<div class="col-md-1"></div>
+				<div class="col-md-7 box4">	
+					<a href="/technology/2019/12/22/dianzicheng.html">
+					<h2>3D Touch 屏幕电子秤的实现</h2></a> 
+					<p><p>自从 iPhone 6s 发布以来，不少开发者都在研究用 3D Touch 屏幕检测物体重量的可行性。虽然从理论上来说硬件是完全支持的，但是 Apple 却一直不在软件方面提供支持。两个月前国外有人利用私有 API 强行实现了它，可却被 App Store 拒绝上架，大家只能无奈地看看演示视频来感受这个神奇的功能。</p>
+</p>
+					<span>2019/12/22发布|43条评论</span>
+			 	
+				</div>
+				<div class="col-md-3 box5">
+					<img src="/public/images/hpic800_s.jpg" >
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+<div class="row div_2">
+				<div class="col-md-1"></div>
+				<div class="col-md-7 box4">	
+					<a href="/kaoyan/2019/12/12/kaoyan.html">
+					<h2>考研如何确定学校</h2></a> 
+					<p><p>我们常常听到一句话“选择比努力更重要”，这句话放在考研这件事上也是完全适用的。信息的不平等，导致了很多的人不能够对目标院校有一个清楚的了解。链接：https://www.zhihu.com/question/265595875/answer/914147356
+</p>
+</p>
+					<span>2019/12/12发布|43条评论</span>
+			 	
+				</div>
+				<div class="col-md-3 box5">
+					<img src="/public/images/3tubiao.jpg" >
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+<div class="row div_2">
+				<div class="col-md-1"></div>
+				<div class="col-md-7 box4">	
+					<a href="/programme/2019/12/10/bianchen.html">
+					<h2>这可能是我见过最好的编程指南了！</h2></a> 
+					<p><p>从大一入学被调剂到计算机专业，到喜欢上这个专业，再到毕业拿到10多个offer，最终进入理想的大厂工作。回想起来这些年确确实实踩了很多坑。我刚开始学习编程的时候也想一口吃成一个胖子，想速成，但是有时候却是不尽人意。</p>
+</p>
+					<span>2019/12/10发布|43条评论</span>
+			 	
+				</div>
+				<div class="col-md-3 box5">
+					<img src="/public/images/4biao.jpg" >
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+
+			<div class="row div_3">
+				<div class="col-md-1"></div>
+				
+				<div class="col-md-2 box6">
+						
+					<h3><a href="javascript:void(0)" disabled> << 上一页</a></h3>
+					
+				</div>	
+				<div class="col-md-1"></div>
+				
+				<div class="col-md-2 box6">
+					
+					<h3><a href="/page2"> 下一页>> </a></h3>
+					
+				</div>
+			
+				<div class="col-md-4 box8">
+					<p class="pink">elatutu</p>
+				</div>
+				<div class="col-md-2"></div>
+				
+			</div>
+
+		</div>
+
+	</div>
+
+	
+	<script type="text/javascript">
+			var left = document.getElementsByClassName('left');
+			var timer;
+
+			left[0].onmousemove = function (e) {
+			var y = e.clientY;
+			console.dir(y);	
+			var h = document.documentElement.clientHeight;
+			var hi = h/2;
+			var _t = this;
+			clearInterval(timer);
+			if(y < hi) {
+				//向上走
+				
+				timer = setInterval(function(){
+					_t.scrollTop -= 1;
+				},20);
+			} else {
+			//向下走
+				timer = setInterval(function(){
+					_t.scrollTop += 1;
+				},20);
+			 }
+			console.dir(hi);
+			console.dir(h);
+			}	
+			
+
+			left[0].onmouseleave = function (e) {
+				clearInterval(timer)
+			}
+
+
+	</script>
+	<script type="text/javascript" src="/public/js/index.js"></script>
+</body>
+</html>

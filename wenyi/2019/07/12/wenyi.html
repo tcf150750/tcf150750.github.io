@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>elatutu's blog</title>
+
+<script type="text/javascript" src="/public/lib/jQuery/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="/public/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/public/lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/public/css/index.css">
+<link rel="stylesheet" media="screen and (min-width:1100px)" href="/public/css/pc.css">
+<link rel="stylesheet" media="screen and (min-width:640px)" href="/public/css/ipad.css">
+<link rel="stylesheet" media="screen and (max-width:639px)" href="/public/css/iphone.css">
+<style type="text/css">
+	#wenzi {
+		margin-top: 30px;
+		font-size: 20px;
+		text-indent: 2em;
+	}
+	.right-box{
+		margin-top: 50px;
+		margin-bottom: 50px;
+		/*padding: 30px;*/
+		/*background: url('images/images (1).jfif') no-repeat;*/
+		background-size: 100% 100%;
+
+	}
+	.right-div1 {
+		/*background: #FAF2E1;*/
+	}
+	.right-div2 {
+		/*padding: 30px;*/
+
+	}
+		
+	.right-content {
+		font-size: 20px;
+		margin-top: 30px;
+	
+	}
+	.page-right{
+		height: 100%;
+		background: url('/public/images/beijing.jpg') no-repeat;
+		background-size: 100% 100%;	
+	}
+	.bb {
+		border: 1px solid #D3D3D3;
+		background-color: #FAFBFF;
+		width: 90%;
+		height: 80%;
+		margin: 0 auto;
+	}
+</style>
+</head>
+<body>
+	<div id="bg_img1"></div>
+	<div id="bg_img2"></div>
+	<div id="bg_img3"></div>
+	<div id="wrap">
+		<!-- 左 -->
+
+		<div class="left" id="box">
+
+				<div class="box">
+					<div class="row box1" >
+						<!-- 头像描述 -->
+						<div class="col-md-12 div1">
+							<div class="col-md-4"></div>
+							<div class="col-md-4">
+								<div class="tu"  >
+								<img id="img1" src="/public/images/touxiang.jpg" style="width: 100px;height: 100px;border: 1px solid pink; border-radius: 50%">
+								</div>
+								<h1>涂涂的博客</h1>
+								<h1>elatutu blog</h1>	
+							</div>	
+							<div class="col-md-4"></div>			
+						</div>
+						<!-- 头像描述结束 -->
+						<!-- 导航栏开始 -->
+						<div class="col-md-12 div2">
+							<div class="col-md-3"></div>
+							<!-- 主页标签 -->
+							<div class="col-md-2 div2_1">
+								<a class="aa" href="index.html" ><span class="glyphicon glyphicon-align-justify"></span><p>首页</p></a>
+							</div>
+							<!-- 主页标签结束 -->
+							<!--  分类标签-->
+							<div class="col-md-2 div2_1">
+								<a class="aa" href="/fenlei.html"><span class="glyphicon glyphicon-book"></span><p>分类</p></a>
+								
+
+							</div>
+							<!-- 分类标签结束 -->
+							<!--  -->
+							<div class="col-md-2 div2_1">
+								<a class="aa" href="#"><span id="sp1" class="glyphicon glyphicon-heart" onclick="get()"></span><p>点赞</p></a>
+							</div>
+		
+							<div class="col-md-3"></div>	
+						</div>
+						<!-- 导航栏结束 -->
+						<!-- 介绍语 -->
+						<div class="col-md-12 div3">
+							<p class="p">欢迎大家我是粉红豹女孩，对，就是超级喜欢粉红豹。学自己所爱，和喜欢的人玩。记录前端学习的成长和点滴。</p>
+						</div>
+						<!-- 介绍语结束 -->
+						
+					</div>
+
+					<!-- 评论 -->
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>HTML</h4>
+							<p class="p">还不错，喜欢,有些许灵感了</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>css</h4>
+							<p class="p">还不错,喜欢</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>牛仔裤番茄</h4>
+							<p class="p">让我来瞅一瞅</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>chaochao</h4>
+							<p class="p">反正我不管，爱了爱了</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+					<div class="row box2">
+						<div class="col-md-1"></div>
+						<div class="col-md-1">
+							<img src="/public/images/pinglun.png" style="width: 30px;height: 30px; border-radius: 50%">
+						</div>
+						<div class="col-md-8">
+							<h4>js5</h4>
+							<p class="p">技能树还挺相似的 年纪也差不多 为我翻版个人博客提供了许多灵感 感谢</p>
+						</div>
+						<div class="col-md-1"></div>	
+					</div>
+
+					<!-- 查看留言开始-->
+					<div class="row box3">
+						<div class="col-md-12">
+								<!-- <a id="a1" href=""><span class="glyphicon glyphicon-menu-hamburger span1" style=""></span><p id="p1">查看更多</p></a> -->
+								<a id="a1" href="/public/talk.html"><span class="glyphicon glyphicon-pencil span1" style=""></span><p id="p1">写新留言</p></a>
+						</div>
+						<!-- <div class="col-md-6"></div> -->
+					</div>
+					<!-- 查看留言结束 -->
+					<div class="row box7">
+						<div class="col-md-1"></div>
+						<div class="col-md-11">
+							<p>本宝宝已运行：</p><span id="htmer_time"></span>
+							<!-- <label>本宝宝已运行:</label><label id="year">0</label><label>年</label><label id="month">0</label><label>月</label><label id="day">0</label><label>日</label> -->
+						</div>
+						<!-- <div class="col-md-1"></div> -->
+					</div>
+				</div>	<!-- 评论语结束 -->
+			
+		</div>
+		
+		<!-- 右 -->
+		<div class="right page-right">
+			
+			<div class="row ">
+				<div class="col-md-1 right-div1"></div>
+				<div class="col-md-10 right-content">
+					<h2>有哪些很文艺的句子？</h2>
+					<p style="font-size: 15px;margin-top: 20px;">时间：2019/07/12 发布</p>
+					<p id="wenzi"> <p>
+1.少年已成人，忘却了诗人和牧笛，心中偶尔渴望原野，只是当年的风不再。
+</p>
+<!--more-->
+<p>2.山河远阔，人间烟火，无一是你，无一不是你。                                                   ——《江海度余生》</p>
+<p>3.如果我们总在等待绝对的一切就绪，那我们 将永远无法开始。——伊凡．屠格涅夫<p>4.初见是惊鸿一瞥，南柯一梦是你。 等待是山重水复，怦然心动是你。 相遇是柳暗花明，小心翼翼是你。 重逢是始料未及，别来无恙是你。</p><p> 5.​一房二人三餐四季，星辰大海，雅俗共度。四海三山二心一生，清风草木，风雨并肩。</p><p>6.只有一件事会使人疲劳——摇摆不定和优柔寡断，而每做一件事，都会使人身心解放，即使把事情办坏了，也比什么都不做强。——茨威格</p><p> 7.假如你不够快乐 也不要把眉头深锁 人生本来短暂 为什么 还要栽培苦涩——汪国真</p><p> 8.若有心，天涯咫尺，若无缘，咫尺天涯，地大物博，我只眠一方瘦土。天高云阔，我只剪一片朝霞。波翻浪涌，我只拾一朵浪花。</p><p> 9.最美的相遇，不言过往；最好的离别，不问归期。</p><p> 10.小时候刮奖刮到”谢”字还不肯扔，非要把"谢谢惠顾”都刮的干干净净，才舍得放手，和后来太多的事情一模一样。</p><p> 11.人生不像做饭，不能等万事俱备了才下锅。                                                     ——《饮食男女》</p><p> 12.愿有岁月可回首，且以深情共白头。13.故事的开头常是这样，适逢其会，猝不及防。故事的结局常是这样，花开两朵，天各一方。14.“人世间真是难处的地方，说一个人‘不通世故’，固然不是好话，但说他‘深于世故’，也不是好话。”</p><p> 15.你要搞清楚自己人生的剧本，不是你父母的续集，不是你子女的前传，更不是你朋友的外篇.对待生命，你不妨大胆冒险一点，因为你总会失去它，如果这世界真有奇迹，那只是努力的另外一个名字，生命中最艰难的阶段，不是没人懂你，而是你不懂自己。——尼采</p><p> 16.有一句话说：“人的一生会遇到两种人，一个惊艳了时光，一个温柔了岁月。”前一种冲撞了青春，后一种搀扶着人生。17.忍耐不是美德，把忍耐当成美德是这个伪善的世界维持它扭曲的秩序的方式，生气才是美德。                                                          ——林奕含</p><p> 18.孤独这两个字拆开来看，有孩童，有瓜果，有小犬，有蝴蝶，足以撑起一个盛夏傍晚间的巷子口，人情味十足。稚儿擎瓜柳棚下，细犬逐蝶窄巷中，人间繁华多笑语，惟我空余两鬓风。——孩童水果猫狗飞蝶当然热闹，可都和你无关，这就叫孤独。     ——林语堂</p><p> 19.把那些无人问津的岁月熬成清茶，等一场芳香四散。20.如果坚持不住，扔掉自己坚守的一些东西，我们就成为世界上的大多数人。相反，如果能挺过那四下无人的征途，这段经历一定会磨平所有的胆怯，让我们变得成熟和从容。21.如果我能少喜欢你一点，你会发现我是个特别好的人。有时候，爱会让人面目可憎。                                                            ——八月长安22.人生最难的两件事，      一是遇见，一是忘记。</p>
+<p>链接：https://www.zhihu.com/question/68484929/answer/560949668
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。作者：周子木</p>
+</p>
+ </p>
+					<div class="row right-div2">
+						<div class="col-md-12 right-box" style='border: 1px solid #D3D3D3; height: 200px;font-size: 20px'>
+							你也来说两句呗
+							<div class="bb" >
+								
+							</div>
+						</div>
+						<!-- <div class="col-md-12" style="border: 1px solid #3D3D3D">
+							昵称: 
+						</div>  -->
+					</div>
+				</div>
+				<div class="col-md-1 right-div1"></div>
+			</div> 
+	
+		</div>
+
+	</div>
+
+ <script type="text/javascript">
+			var left = document.getElementsByClassName('left');
+			var timer;
+
+			left[0].onmousemove = function (e) {
+			var y = e.clientY;
+			console.dir(y);	
+			var h = document.documentElement.clientHeight;
+			var hi = h/2;
+			var _t = this;
+			clearInterval(timer);
+			if(y < hi) {
+				//向上走
+				
+				timer = setInterval(function(){
+					_t.scrollTop -= 1;
+				},20);
+			} else {
+			//向下走
+				timer = setInterval(function(){
+					_t.scrollTop += 1;
+				},20);
+			 }
+			console.dir(hi);
+			console.dir(h);
+			}	
+			
+
+			left[0].onmouseleave = function (e) {
+				clearInterval(timer)
+			}
+
+
+	</script>
+	<script type="text/javascript" src="/public/js/index.js"></script>
+</body>
+</html> 
